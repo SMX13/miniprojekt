@@ -1,0 +1,144 @@
+/* Custom Styles */
+.navbar {
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.3)), url('https://i.postimg.cc/7LkYxVpx/10.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 15px 0;
+    transition: all 0.3s;
+}
+
+.navbar-scrolled {
+    background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.7)), url('https://i.postimg.cc/7LkYxVpx/10.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white ;
+}
+
+.navbar-nav .nav-link {
+    color: white ;
+    font-weight: 500;
+    margin: 0 10px;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+    color: #ffc107 ;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://i.postimg.cc/7LkYxVpx/10.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    padding: 200px 0 150px 0;
+    text-align: center;
+    margin-top: 0;
+}
+
+.section-title {
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: #ffc107;
+    margin: 15px auto;
+}
+
+.service-card, .portfolio-card {
+    margin-bottom: 30px;
+    transition: transform 0.3s;
+}
+
+.service-card:hover, .portfolio-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-icon {
+    font-size: 3rem;
+    color: #ffc107;
+    margin-bottom: 20px;
+}
+
+.footer {
+    background-color: #343a40;
+    color: white;
+    padding: 30px 0;
+}
+
+.btn-gold {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: #212529;
+    font-weight: bold;
+    padding: 12px 30px;
+    transition: all 0.3s;
+}
+
+.btn-gold:hover {
+    background-color: #e0a800;
+    border-color: #e0a800;
+    color: #212529;
+    transform: translateY(-2px);
+}
+
+/* media */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 150px 0 100px 0;
+    }
+    
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-section .lead {
+        font-size: 1.5rem ;
+    }
+    
+    .service-icon {
+        font-size: 2.5rem;
+    }
+    
+    .navbar-nav .nav-link {
+        margin: 5px 0;
+        text-align: center;
+    }
+    
+    .navbar {
+        background-attachment: scroll;
+    }
+    
+    .hero-section {
+        background-attachment: scroll;
+    }
+}
+
+
+/* Service  */
+.services-section h4 {
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.services-section p {
+    line-height: 1.6;
+}
+.card img{
+    max-width: 0 auto;
+    max-height: 0 auto;
+}
